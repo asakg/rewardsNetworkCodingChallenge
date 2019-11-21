@@ -1,0 +1,368 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Search repository by author name - Positive scenario",
+        "description": "",
+        "id": "test-search-repository-by-author-name---git-hub-functionality;search-repository-by-author-name---positive-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1062830835,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ContentType and AcceptType is Json",
+            "match": {
+              "location": "SearchByAuthorNameSteps.contenttype_and_AcceptType_is_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3561934217,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters valid chase and hits api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chase",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_enters_valid_and_hits_api(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2838527,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 614862934,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user verifies the vim-ansible-yaml exists and the focuspoint-vim exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vim-ansible-yaml",
+                  "offset": 18
+                },
+                {
+                  "val": "focuspoint-vim",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_verifies_the_exists_and_the_exists(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49709657,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies the chase of repositories",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chase",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_verifies_the_of_repositories(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Search repository by author name - Negative scenario",
+        "description": "",
+        "id": "test-search-repository-by-author-name---git-hub-functionality;search-repository-by-author-name---negative-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1307765,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "ContentType and AcceptType is Json",
+            "match": {
+              "location": "SearchByAuthorNameSteps.contenttype_and_AcceptType_is_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 981509882,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters valid asakg and hits api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "asakg",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_enters_valid_and_hits_api(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 285888,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 389122,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user verifies that invalid A17g and invalid bghies do not exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A17g",
+                  "offset": 27
+                },
+                {
+                  "val": "bghies",
+                  "offset": 44
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_verifies_that_invalid_and_invalid_do_not_exist(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Search repository by author name - Negative scenario",
+        "description": "",
+        "id": "test-search-repository-by-author-name---git-hub-functionality;search-repository-by-author-name---negative-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1408489,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "ContentType and AcceptType is Json",
+            "match": {
+              "location": "SearchByAuthorNameSteps.contenttype_and_AcceptType_is_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1252089464,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user enters invalid \u003c\"parameter\"\u003e and valid \u003c\"authorName\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003c\"parameter\"\u003e",
+                  "offset": 20
+                },
+                {
+                  "val": "\u003c\"authorName\"\u003e",
+                  "offset": 44
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_enters_invalid_and_valid(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 636658,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22502001,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "no items should be displayed",
+            "match": {
+              "location": "SearchByAuthorNameSteps.no_items_should_be_displayed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Search repository by author name - Negative scenario",
+        "description": "",
+        "id": "test-search-repository-by-author-name---git-hub-functionality;search-repository-by-author-name---negative-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2445455,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "ContentType and AcceptType is Json",
+            "match": {
+              "location": "SearchByAuthorNameSteps.contenttype_and_AcceptType_is_Json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1656184838,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user enters invalid \u003c\"parameter\"\u003e and valid \u003c\"authorName\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003c\"parameter\"\u003e",
+                  "offset": 20
+                },
+                {
+                  "val": "\u003c\"authorName\"\u003e",
+                  "offset": 44
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.user_enters_invalid_and_valid(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 314102,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "SearchByAuthorNameSteps.status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15127346,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "no items should be displayed",
+            "match": {
+              "location": "SearchByAuthorNameSteps.no_items_should_be_displayed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "Test Search Repository by Author Name - Git Hub Functionality",
+    "description": "",
+    "id": "test-search-repository-by-author-name---git-hub-functionality",
+    "keyword": "Feature",
+    "uri": "./src/test/resources/features/SearchByAuthor.feature",
+    "tags": [
+      {
+        "name": "@search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 5
+        }
+      }
+    ]
+  }
+]
